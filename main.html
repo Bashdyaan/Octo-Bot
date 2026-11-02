@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Octo-bot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="logo.png" alt="Octo-bot Logo">
+        </div>
+        <div class="nav-links">
+            <a href="main.html">Home</a>
+            <a href="overOcto-bot.html">Over Octo-bot</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+    <header>
+        <div class="header-content">
+            <h1>Octo-bot</h1>
+            <p>Jouw persoonlijk herinnerings hulpje!</p>
+        </div>
+    </header>
+
+    <main>
+        <div >
+            <section class="extra-section">
+                <div class="extra-info">
+                    <h1>De octo-bot</h1>
+                    <p>
+                        De octo bot, een robot die je graag 
+                        een herrinnering geeft als je de deur 
+                        uit moet. Het geeft je recommendaties 
+                        en help jouw elke dag met het meenemen 
+                        van elk item die jij nodig zou kunnen 
+                        hebben. 
+                    </p>
+                </div>
+                <div class="section4Image">
+                    <img src="chicken.png" alt="Image">
+                </div>
+            </section>
+        </div>
+        <div class="main-content">
+            <section>
+                <div>
+                    <h1>De werk pins</h1>
+                    <p>
+                        deze pins zijn perfect voor het onthouden 
+                        van alles wat je nodig hebt voor je werk
+                    </p>
+                </div>
+                <div class="section1Image">
+                    <img src="banana.png" alt="banana">
+                </div>
+            </section>
+            <section>
+                <div>
+                    <h1>De school pins</h1>
+                    <p>
+                        deze pins zijn perfect voor het onthouden 
+                        van alles wat je nodig hebt voor je school
+                    </p>
+                </div>
+                <div class="section2Image">
+                    <img src="cheese.png" alt="cheese">
+                </div>
+            </section>
+            <section>
+                <div>
+                    <h1>De sport pins</h1>
+                    <p>
+                        deze pins zijn perfect voor het onthouden 
+                        van alles wat je nodig hebt voor je sport
+                    </p>
+                </div>
+                <div class="section3Image">
+                    <img src="kabab.png" alt="kabab">
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-inner">
+            <div class="footerContact">
+                <div class="logo">
+                    <img src="logo.png" alt="image of logo" class="logo">
+                </div>
+                <a href="contact.html" class="footerLink">
+                    Contact us: Here.
+                </a>
+                <div class="footerSocials">
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <img src="instagram.png" alt="Instagram">
+                    </a>
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <img src="facebook.png" alt="Facebook">
+                    </a>
+                    <a href="https://www.snapchat.com/" target="_blank" class="snapchat">
+                        <img src="snapchat.png" alt="Snapchat">
+                    </a>
+                </div>
+            </div>
+            <ul class="footerExtras">
+                <li>privacyverklaring</li>
+                <li>Algemene voorwaarden</li>
+                <li>Cookiebeleid</li>
+                <li><a href="contact.html" class="footerLink">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script>
+        const nav = document.querySelector("nav");
+        const updateNavGradient = () => {
+            nav.classList.toggle("scrolled", window.scrollY > 80);
+        };
+
+        window.addEventListener("scroll", updateNavGradient, { passive: true });
+        updateNavGradient();
+    </script>
+</body>
+</html>

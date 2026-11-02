@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Neem contact op met Octo-bot over herinneringen, pins of een samenwerking.">
+    <title>Contact | Octo-bot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="logo.png" alt="Octo-bot Logo">
+        </div>
+        <div class="nav-links">
+            <a href="main.html">Home</a>
+            <a href="overOcto-bot.html">Over Octo-bot</a>
+            <a href="contact.html" aria-current="page">Contact</a>
+        </div>
+    </nav>
+    <header class="contact-hero">
+        <div class="header-content">
+            <p class="contact-eyebrow">We denken met je mee</p>
+            <h1>Contact met Octo-bot</h1>
+            <p>Een vraag, idee of feedback? We horen graag van je.</p>
+        </div>
+    </header>
+
+    <main class="contact-main">
+        <div class="contact-layout">
+            <section class="contact-card">
+                <span class="contact-icon" aria-hidden="true">@</span>
+                <h2>Stuur ons een bericht</h2>
+                <p>Wil je meer weten over Octo-bot of de herinnerings-pins? Mail ons gerust.</p>
+                <p class="contact-email">hallo@octo-bot.nl</p>
+                <button class="contact-button" id="mail-button" type="button">Mail Octo-bot <span aria-hidden="true">↗</span></button>
+            </section>
+            <section class="contact-card contact-topics">
+                <span class="contact-icon" aria-hidden="true">?</span>
+                <h2>Waarover kun je mailen?</h2>
+                <ul>
+                    <li>Vragen over de Octo-bot</li>
+                    <li>Ideeën voor herinneringen of pins</li>
+                    <li>Feedback of een mogelijke samenwerking</li>
+                </ul>
+                <button class="contact-back" id="home-button" type="button">Terug naar de homepage <span aria-hidden="true">→</span></button>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-inner">
+            <div class="footerContact">
+                <div class="logo">
+                    <img src="logo.png" alt="image of logo" class="logo">
+                </div>
+                <a href="contact.html" class="footerLink">
+                    Contact us: Here.
+                </a>
+                <div class="footerSocials">
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                        <img src="instagram.png" alt="Instagram">
+                    </a>
+                    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                        <img src="facebook.png" alt="Facebook">
+                    </a>
+                    <a href="https://www.snapchat.com/" target="_blank" rel="noopener noreferrer" class="snapchat">
+                        <img src="snapchat.png" alt="Snapchat">
+                    </a>
+                </div>
+            </div>
+            <ul class="footerExtras">
+                <li>privacyverklaring</li>
+                <li>Algemene voorwaarden</li>
+                <li>Cookiebeleid</li>
+                <li><a href="contact.html" class="footerLink">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script>
+        document.querySelector("#mail-button").addEventListener("click", () => {
+            window.location.href = "mailto:hallo@octo-bot.nl";
+        });
+
+        document.querySelector("#home-button").addEventListener("click", () => {
+            window.location.href = "main.html";
+        });
+
+        const nav = document.querySelector("nav");
+        const updateNavGradient = () => {
+            nav.classList.toggle("scrolled", window.scrollY > 80);
+        };
+
+        window.addEventListener("scroll", updateNavGradient, { passive: true });
+        updateNavGradient();
+    </script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="logo.png" alt="Octo-bot Logo">
+        </div>
+        <div class="nav-links">
+            <a href="main.html">Home</a>
+            <a href="overOcto-bot.html">Over Octo-bot</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+    <main>
+        <section class="about">
+            <div>
+                <h1>De octo-bot</h1>
+                <p>
+                    Dit is het eerste prototype van onze octo bot. 
+                    Hierin kan je duidelijk zien dat er best een 
+                    hoop is veranderd in het eindproduct.
+                </p>
+            </div>
+            <div>
+                <img src="chicken.png" alt="Octo-bot Prototype">
+            </div>
+        </section>
+        <section class="about" Id="aboutPrototype">
+            <div>
+                <h2>Het prototype</h2>
+                <p>
+                    Het prototype is gemaakt van hout en heeft een 
+                    simpele structuur. Het is een basisversie van de 
+                    octo-bot, die nog veel verbeterd kan worden.
+                </p>
+            </div>
+            <div>
+                <img src="prototype.png" alt="Octo-bot Prototype">
+            </div>
+        </section>
+        <section class="about" Id="aboutHandbook">
+            <div>
+                <h2>De handleiding</h2>
+                <p>
+                    Om de octo-bot te gebruiken heb je natuurlijk instructies nodig.
+                    vandaar bij deze de octo-bot instructies.
+                </p>
+            </div>
+            <div>
+                <img src="handbook.png" alt="Octo-bot Handleiding">
+            </div>
+    </main>
+    <footer>
+        <div class="footer-inner">
+            <div class="footerContact">
+                <div class="logo">
+                    <img src="logo.png" alt="image of logo" class="logo">
+                </div>
+                <a href="contact.html" class="footerLink">
+                    Contact us: Here.
+                </a>
+                <div class="footerSocials">
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <img src="instagram.png" alt="Instagram">
+                    </a>
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <img src="facebook.png" alt="Facebook">
+                    </a>
+                    <a href="https://www.snapchat.com/" target="_blank" class="snapchat">
+                        <img src="snapchat.png" alt="Snapchat">
+                    </a>
+                </div>
+            </div>
+            <ul class="footerExtras">
+                <li>privacyverklaring</li>
+                <li>Algemene voorwaarden</li>
+                <li>Cookiebeleid</li>
+                <li><a href="contact.html" class="footerLink">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script>
+        const nav = document.querySelector("nav");
+        const updateNavGradient = () => {
+            nav.classList.toggle("scrolled", window.scrollY > 80);
+        };
+
+        window.addEventListener("scroll", updateNavGradient, { passive: true });
+        updateNavGradient();
+    </script>
+</body>
+</html>
