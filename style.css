@@ -6,7 +6,9 @@ img .footerSocials img {
 .logo img{
     max-width: 40px;
     border-radius: 50%;
+    border: none;
 }
+
 
 body{
     margin: 0;
@@ -21,6 +23,7 @@ body{
 img{
     max-width: 100%;
     height: auto;
+    border: 3px solid #170a6c;
 }
 
 
@@ -187,6 +190,14 @@ main .main-content > section{
     flex: 1;
     min-width: 0;
 }
+.mainSections{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.about{
+    flex-direction: column;
+}
 .extra-info{
     max-width: 100%;
     flex: 2;
@@ -201,47 +212,39 @@ main .main-content > section{
     justify-content: space-between;
 }
 
-.section1Image img{
+#casingImage img {
+    display: block;
+    width: auto;
+    height: auto;
     max-width: 100%;
     max-height: 40vh;
+    object-fit: contain;
     border-radius: 15%;
 }
 
-.section2Image img{
-    max-width: 100%;
-    max-height: 40vh;
-    border-radius: 15%;
-}
-
-.section1Image img,
-.section2Image img,
-.section3Image img {
+.sectionImage img {
     width: 120px;
     height: 120px;
     object-fit: cover;
     border-radius: 15%;
 }
 
-.section3Image img{
-    max-width: 100%;
-    max-height: 40vh;
-    border-radius: 15%;
-}
-
-.section4Image img{
-    max-height: 40vh;
-    max-width: 100%;
-    padding: 5px;
-    border-radius: 15%;
+.about-main{
+    min-height: 60vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
 }
 
 .about{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     text-align: center;
     padding: 20px;
+    min-height: 60vh;
 }
 .about img{
     max-width: 100%;
@@ -286,9 +289,24 @@ footer{
     border-radius: 6px;
     transition: background-color 0.2s ease;
 }
+.footerSocials{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.footerSocials a{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .footerSocials img{
+    display: block;
+    width: 40px;
+    height: 40px;
     border: none;
-    max-height: 40px;
+    object-fit: contain;
     border-radius: 100px;
     background: none;
 }
@@ -408,7 +426,7 @@ footer{
     outline: 3px solid #0c0442;
     outline-offset: 3px;
 }
-@media (max-width: 700px){
+@media (max-width: 600px){
     nav{
         align-items: center;
     }
@@ -428,6 +446,12 @@ footer{
     main .main-content,
     .extra-section{
         flex-direction: column;
+    }
+    .about-main{
+        flex-direction: column;
+    }
+    .about{
+        min-height: 0;
     }
     .extra-info{
         margin: 0;
@@ -462,4 +486,5 @@ footer{
         flex-direction: column;
         text-align: center;
     }
+    
 }
