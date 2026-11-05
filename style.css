@@ -174,6 +174,41 @@ main .main-content{
     display: flex;
 }
 
+.meet {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.meet section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.meet img {
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+    border-radius: 15%;
+}
+
+@media (min-width: 768px) {
+    .meet {
+        flex-direction: row;
+    }
+    .meet section {
+        flex: 1;
+    }
+    .meet img {
+        height: 300px;
+    }
+}
+
 section{
     background: #05c8f1;
     border-radius: 10px;
@@ -485,6 +520,9 @@ footer{
     .about{
         flex-direction: column;
         text-align: center;
+    }
+    .meet {
+        flex-direction: column;
     }
     
 }
